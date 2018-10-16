@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Starter file</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" \>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Jumbotron for Title -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="text-center" , style="font-family: magneto">Trivia Game</h1>
+                <h3 class="text-center">You will be given a series of multiple choice questions with 30 seconds to answer.</h3>
+
+                <h3 class="text-center"> Click on the right answer within 30 seconds and win a point.</h3>
+
+                <h3 class="text-center">Click on the wrong answer or let the timer expire and lose a point..</h3>
+
+                <h4 class="text-center">We will decide at the end if you won or lost.Click button to start!</h4>
+
+                <button class="btn btn-primary" id="start-btn"> Start Game! </button>
+
+
+            </div>
+        </div>
+
+
+        <div class="game-area">
+            <div class="feedback" style="text-align: center">
+                <div class="counter">
+                    <h1>
+                        00:
+                        <span id="counter">30</span>
+                    </h1>
+                </div>
+                <h1 class="score">
+                    Score:
+                    <span id="score">
+                        0
+                    </span>
+                </h1>
+                <div class="alert alert-info" role="alert" id="alert">Select correct answer to earn points</div>
+            </div>
+            <br>
+            <br>
+            <div id="question-area">
+                <div class="panel panel-default">
+                    <div class="panel-body" id="question">
+                        Question Here...
+                    </div>
+                </div>
+                <span>A</span>
+                <div class="well well-sm answer-choice" id="a">...</div>
+                <span>B</span>
+                <div class="well well-sm answer-choice" id="b">...</div>
+                <span>C</span>
+                <div class="well well-sm answer-choice" id="c">...</div>
+                <span>D</span>
+                <div class="well well-sm answer-choice" id="d">...</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
